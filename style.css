@@ -94,7 +94,7 @@ footer {
 
 .input-bar > input {
   height: 2.5rem;
-  width: 40vw;
+  width: 35vw;
   border: 1px solid rgba(167, 163, 163, 0.541);
   outline: none;
   border-radius: 10px;
@@ -166,6 +166,7 @@ footer {
 
 span {
   font-size: 0.7rem;
+  text-align: center;
 }
 
 .radiusimgs {
@@ -254,6 +255,20 @@ span {
   color: darkslategray;
   border: 1px solid #85c742;
   cursor: pointer;
+}
+
+.pulsanti2 {
+  padding: 0.5rem 1rem;
+  border-radius: 2rem;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  background-color: #f23160;
+}
+
+.pulsanti2:hover {
+  background-color: #697d91;
+  color: white;
 }
 
 .titoletto > button:hover {
