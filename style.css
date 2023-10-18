@@ -23,6 +23,7 @@ body {
     "as foot";
   grid-template-columns: 80px 1fr;
   grid-template-rows: 75px 60px 1fr 85px;
+  transition: 1s;
 }
 
 /* GENERALI */
@@ -402,6 +403,8 @@ li:hover {
 .copyrightp {
   font-size: 0.7rem;
   color: #495a6a;
+}
+#sls {
 }
 
 /* Media queries */
