@@ -33,7 +33,7 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 0 2rem;
-  border: 1px solid lightgray;
+  border-bottom: 0.5px solid lightgray;
 }
 
 nav {
@@ -44,7 +44,7 @@ nav {
 aside {
   grid-area: as;
   padding: 1rem 0.5rem;
-  border: 1px solid lightgray;
+  border: 0.5px solid lightgray;
 }
 
 main {
@@ -85,7 +85,7 @@ footer {
   position: absolute;
   right: 0;
   background-color: white;
-  border-radius: 1rem;
+  border-radius: 2rem;
 }
 .input-bar > button > img {
   height: 80%;
@@ -188,7 +188,7 @@ span {
 .cont-profilo img {
   width: 40px;
   height: 40px;
-  border: none;
+  border-radius: 50%;
 }
 .testo-cont {
   display: flex;
@@ -219,6 +219,44 @@ span {
   border-radius: 1rem;
 }
 
+.spazio-video-quadrati {
+  display: flex;
+  gap: 1.5rem;
+  padding: 1rem 2rem;
+  background-color: #e9ebee;
+}
+
+.foto-profilo {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding-top: 0.5rem;
+}
+
+.foto-profilo > img {
+  border-radius: 50%;
+}
+
+.testo {
+  padding: 0.3rem 0;
+}
+
+.views {
+  font-size: 0.8rem;
+}
+
+.habibi {
+  font-weight: bold;
+  font-size: 0.9rem;
+}
+
+figure img {
+  border-radius: 0.7rem;
+}
+
+.caption-container {
+  padding-top: 0.3rem;
+}
 /* Media queries */
 
 /* TABLET */
@@ -229,9 +267,5 @@ span {
   }
   aside {
     display: none;
-  }
-  .central-section {
-    display: flex;
-    flex-direction: column;
   }
 }
