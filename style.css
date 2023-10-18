@@ -45,9 +45,6 @@ nav {
   overflow: auto;
 }
 
-#gaming {
-  transition: 3s;
-}
 nav::-webkit-scrollbar {
   display: none;
 }
@@ -76,6 +73,8 @@ footer {
 }
 
 /* SPECIFICHE */
+
+/*HEADER*/
 
 .logo-sect {
   display: flex;
@@ -171,6 +170,8 @@ span {
 .radiusimgs > span {
   font-weight: bold;
 }
+
+/* MAIN */
 
 .central-section {
   display: flex;
@@ -296,6 +297,11 @@ figure img {
   cursor: pointer;
 }
 
+.pulsanti:hover {
+  background-color: #697d91;
+  color: white;
+}
+
 #slap {
   padding: 0.5rem 1rem;
   border-radius: 2rem;
@@ -394,5 +400,13 @@ li:hover {
   .central-section {
     flex-direction: column;
     justify-content: center;
+  }
+  .lista1 ul {
+    flex-direction: column;
+    padding-top: 2rem;
+  }
+  footer {
+    flex-direction: column;
+    padding-top: 2rem;
   }
 }
