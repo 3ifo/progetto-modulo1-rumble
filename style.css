@@ -22,7 +22,7 @@ body {
     "as main"
     "as foot";
   grid-template-columns: 80px 1fr;
-  grid-template-rows: 75px 60px 1fr 80px;
+  grid-template-rows: 75px 60px 1fr 85px;
 }
 
 /* GENERALI */
@@ -41,21 +41,38 @@ nav {
   display: flex;
   align-items: center;
   padding-left: 2rem;
+  border-left: 0.5px solid lightgray;
+  overflow: auto;
+}
+
+#gaming {
+  transition: 3s;
+}
+nav::-webkit-scrollbar {
+  display: none;
+}
+nav .menu-nav {
+  flex-shrink: 0;
+}
+
+a {
+  text-decoration: none;
+  color: black;
 }
 
 aside {
   grid-area: as;
   padding: 1rem 0.5rem;
-  border: 0.5px solid lightgray;
 }
 
 main {
   grid-area: main;
+  border-left: 0.5px solid lightgray;
 }
 
 footer {
-  background-color: blue;
   grid-area: foot;
+  border-left: 0.5px solid lightgray;
 }
 
 /* SPECIFICHE */
@@ -276,6 +293,7 @@ figure img {
   border-radius: 2rem;
   outline: none;
   border: none;
+  cursor: pointer;
 }
 
 #slap {
@@ -284,6 +302,7 @@ figure img {
   outline: none;
   border: none;
   background-color: #002cfe;
+  cursor: pointer;
 }
 
 #live {
@@ -293,6 +312,7 @@ figure img {
   border: none;
   background-color: #f23160;
   color: white;
+  cursor: pointer;
 }
 
 #ufc {
@@ -301,6 +321,42 @@ figure img {
   outline: none;
   border: none;
   background-color: #d20a0a;
+  cursor: pointer;
+}
+
+/* FOOTER */
+
+footer {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.lista1 ul {
+  display: flex;
+  list-style: none;
+  font-weight: 600;
+  color: rgb(49, 49, 49);
+}
+
+li {
+  padding: 0 0.5rem;
+  font-size: 0.8rem;
+  cursor: pointer;
+}
+
+li:hover {
+  text-decoration: underline;
+}
+
+.lista2 ul {
+  display: flex;
+  list-style: none;
+}
+
+.copyrightp {
+  font-size: 0.7rem;
+  color: #495a6a;
 }
 
 /* Media queries */
@@ -313,5 +369,30 @@ figure img {
   }
   aside {
     display: none;
+  }
+  .tablet {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  body {
+    grid-template-columns: 0px 1fr;
+  }
+  aside {
+    display: none;
+  }
+  .tablet {
+    display: none;
+  }
+  .mobile {
+    display: none;
+  }
+  .input-bar {
+    display: none;
+  }
+  .central-section {
+    flex-direction: column;
+    justify-content: center;
   }
 }
