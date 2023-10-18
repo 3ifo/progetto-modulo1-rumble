@@ -22,7 +22,7 @@ body {
     "as main"
     "as foot";
   grid-template-columns: 80px 1fr;
-  grid-template-rows: 75px 60px 1fr 80px;
+  grid-template-rows: 75px 50px 1fr 80px;
 }
 
 /* GENERALI */
@@ -39,6 +39,9 @@ header {
 nav {
   background-color: yellow;
   grid-area: nav;
+  display: flex;
+  align-items: center;
+  padding-left: 2rem;
 }
 
 aside {
@@ -200,11 +203,20 @@ span {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem 2rem;
+  padding: 1.5rem 2rem 0.5rem 2rem;
   font-size: 1.2rem;
   font-weight: 800;
   background-color: #e9ebee;
   border-top: 1px solid lightgray;
+}
+
+.titoletto > button {
+  background-color: white;
+  padding: 0.5rem 1.2rem;
+  border-radius: 2rem;
+  color: darkslategray;
+  border: 1px solid #85c742;
+  cursor: pointer;
 }
 
 .spazio-video {
@@ -257,6 +269,20 @@ figure img {
 .caption-container {
   padding-top: 0.3rem;
 }
+
+/*NAVBAR*/
+
+.pulsanti {
+  padding: 0.5rem 0.5rem;
+  border-radius: 2rem;
+  outline: none;
+  border: none;
+}
+
+.btn-nav {
+  padding: 1rem 0rem;
+}
+
 /* Media queries */
 
 /* TABLET */
