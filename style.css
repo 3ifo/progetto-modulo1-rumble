@@ -22,7 +22,7 @@ body {
     "as main"
     "as foot";
   grid-template-columns: 80px 1fr;
-  grid-template-rows: 75px 50px 1fr 80px;
+  grid-template-rows: 75px 60px 1fr 80px;
 }
 
 /* GENERALI */
@@ -37,7 +37,6 @@ header {
 }
 
 nav {
-  background-color: yellow;
   grid-area: nav;
   display: flex;
   align-items: center;
@@ -148,8 +147,8 @@ span {
 
 .imgtonde > img {
   border-radius: 50%;
-  height: 30px;
-  width: 30px;
+  height: 28px;
+  width: 28px;
 }
 
 .radiusimgs > span {
@@ -185,7 +184,7 @@ span {
 
 .cont-profilo {
   display: flex;
-  gap: 1rem;
+  gap: 0.5rem;
 }
 
 .cont-profilo img {
@@ -273,14 +272,35 @@ figure img {
 /*NAVBAR*/
 
 .pulsanti {
-  padding: 0.5rem 0.5rem;
+  padding: 0.5rem 1rem;
   border-radius: 2rem;
   outline: none;
   border: none;
 }
 
-.btn-nav {
-  padding: 1rem 0rem;
+#slap {
+  padding: 0.5rem 1rem;
+  border-radius: 2rem;
+  outline: none;
+  border: none;
+  background-color: #002cfe;
+}
+
+#live {
+  padding: 0.5rem 1rem;
+  border-radius: 2rem;
+  outline: none;
+  border: none;
+  background-color: #f23160;
+  color: white;
+}
+
+#ufc {
+  padding: 0.5rem 1rem;
+  border-radius: 2rem;
+  outline: none;
+  border: none;
+  background-color: #d20a0a;
 }
 
 /* Media queries */
