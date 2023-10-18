@@ -423,6 +423,8 @@ li:hover {
   }
 }
 
+/* Smartphone*/
+
 @media screen and (max-width: 640px) {
   body {
     grid-template-columns: 0px 1fr;
