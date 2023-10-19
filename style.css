@@ -83,7 +83,7 @@ footer {
 
 .logo-sect {
   display: flex;
-  gap: 1rem;
+  gap: 1.5rem;
   align-items: center;
 }
 
@@ -258,6 +258,10 @@ span {
   cursor: pointer;
 }
 
+.btnlive {
+  color: white;
+}
+
 .pulsanti2 {
   padding: 0.5rem 1rem;
   border-radius: 2rem;
@@ -404,8 +408,6 @@ li:hover {
   font-size: 0.7rem;
   color: #495a6a;
 }
-#sls {
-}
 
 /* Media queries */
 
@@ -455,7 +457,8 @@ li:hover {
   }
   .lista1 ul {
     flex-direction: column;
-    padding-top: 2rem;
+    padding-top: 4rem;
+    gap: 0.5rem;
   }
   footer {
     flex-direction: column;
